@@ -5,7 +5,7 @@ const catalog = [
     name: 'Athletic Tank',
     category: 'men',
     sizes: ['S', 'M', 'L', 'XL'],
-    price: 18.99,
+    price: 118.99,
     colors: ['Black', 'Blue'],
     tags: ['sale'],
     image: '/src/assets/mens/tank.png'

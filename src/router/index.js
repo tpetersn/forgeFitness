@@ -4,6 +4,7 @@ import MenPage from '../views/MenPage.vue'
 import WomenPage from '../views/WomenPage.vue'
 import AccessoriesPage from '../views/AccessoriesPage.vue'
 import SalesPage from '../views/SalesPage.vue'
+import CheckoutPage from '../views/CheckoutPage.vue'
 
 
 
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/sale',
       name: 'sale',
       component: SalesPage,
+    },
+    {
+      path: '/checkout',
+      name: 'checkout',
+      component: CheckoutPage,
     },
   ],
 })

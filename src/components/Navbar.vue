@@ -150,7 +150,7 @@ const active = ref<string | null>(null);
 .ff-right {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .ff-search {
@@ -158,17 +158,17 @@ const active = ref<string | null>(null);
     align-items: center;
     border: 1px solid #b4b4b4;
     padding: 0.35rem 0.6rem;
-    border-radius: 4px;
+    border-radius: 18px;
 }
 
 .ff-search input {
     border: none;
     outline: none;
-    width: 8rem;
+    width: 5rem;
 }
 
 .ff-cart {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #000;
 }

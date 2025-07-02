@@ -11,10 +11,11 @@
           <!-- EMPTY STATE -->
           <template v-if="cart.isEmpty">
             <p class="empty">You have no items in your cart</p>
+            <br> <p class="shop">Browse our sections today!</p>
             <div class="btn-col">
-              <RouterLink to="/men" class="ghost" @click="cart.toggle">Shop Men’s</RouterLink>
-              <RouterLink to="/women" class="ghost" @click="cart.toggle">Shop Women’s</RouterLink>
-              <RouterLink to="/sale" class="ghost" @click="cart.toggle">Shop Sales</RouterLink>
+              <RouterLink to="/men" class="empty-btn" @click="cart.toggle">Shop Men’s</RouterLink>
+              <RouterLink to="/women" class="empty-btn" @click="cart.toggle">Shop Women’s</RouterLink>
+              <RouterLink to="/sale" class="empty-btn" @click="cart.toggle">Shop Sales</RouterLink>
             </div>
           </template>
 
@@ -24,7 +25,7 @@
               <li v-for="(item, i) in cart.lines" :key="i">
                 <span> {{ item.name}} ({{ item.size }}) x {{ item.qty }}</span>
                 <span class="price">${{ (item.price * item.qty).toFixed(2) }}</span>
-                <button class ="remove" @click="cart.remove(i)"></button>
+                <button class ="remove" @click="cart.remove(i)">x</button>
               </li>
             </ul>
 
@@ -88,7 +89,9 @@ header {
 }
 h3   {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .close {
   background:none;
@@ -98,6 +101,19 @@ h3   {
 
 .empty {
   padding: 1rem; 
+  margin-bottom: -1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.shop {
+  padding: 1rem; 
+  margin-bottom: 4rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+
 }
 
 .btn-col {
@@ -105,15 +121,17 @@ h3   {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0 1rem;
+  align-items: center;
 }
-.ghost  {
+.empty-btn  {
   display:block;
   text-align:center;
   padding: 0.5rem 0;
   background:#68707d;
   color:#fff;
   text-decoration:none;
-  border-radius:4px;
+  border-radius:22px;
+  width: 75%;
 }
 
 .item-list {
@@ -147,9 +165,8 @@ h3   {
   border-radius:4px;
 }
 .remove {
-  background: none;
-  margin-left: 0.5rem;
-
+  background-color: grey;
+  border-radius: 5px;
 }
 .item-list li {
   display: flex;
@@ -158,5 +175,9 @@ h3   {
   gap: 0.5rem;
 }
 
+.price {
+  font-weight: bold;
+  margin-right: -8rem;
+}
 
 </style>
