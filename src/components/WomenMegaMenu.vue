@@ -4,41 +4,41 @@
       <RouterLink to="/women/tops">
         <h4>WOMEN’S TOPS</h4>
       </RouterLink>  
-      <RouterLink to="/women/t-shirts">T-Shirts</RouterLink>
-      <RouterLink to="/women/long-sleeve">Long Sleeve</RouterLink>
-      <RouterLink to="/women/tanks">Tanks</RouterLink>
-      <RouterLink to="/women/compression-fit">Compression Fit</RouterLink>
-      <RouterLink to="/women/sweaters">Sweaters</RouterLink>
+      <RouterLink to="/women/tops/t-shirts">T-Shirts</RouterLink>
+      <RouterLink to="/women/tops/long-sleeve">Long Sleeve</RouterLink>
+      <RouterLink to="/women/tops/tanks">Tanks</RouterLink>
+      <RouterLink to="/women/tops/compression-fit">Compression Fit</RouterLink>
+      <RouterLink to="/women/tops/sweaters">Sweaters</RouterLink>
     </div>
 
     <div class="mega-col">
       <RouterLink to="/women/bottoms">
         <h4>WOMEN’S BOTTOMS</h4>
       </RouterLink>    
-      <RouterLink to="/women/leggings">Leggings</RouterLink>
-      <RouterLink to="/women/shorts">Shorts</RouterLink>
-      <RouterLink to="/women/pants">Pants</RouterLink>
-      <RouterLink to="/women/skirts">Skirts</RouterLink>
-      <RouterLink to="/women/joggers">Joggers</RouterLink>
+      <RouterLink to="/women/bottoms/leggings">Leggings</RouterLink>
+      <RouterLink to="/women/bottoms/shorts">Shorts</RouterLink>
+      <RouterLink to="/women/bottoms/pants">Pants</RouterLink>
+      <RouterLink to="/women/bottoms/skirts">Skirts</RouterLink>
+      <RouterLink to="/women/bottoms/joggers">Joggers</RouterLink>
     </div>
 
     <div class="mega-col">
       <RouterLink to="/women/shoes">
         <h4>WOMEN’S SHOES</h4>
       </RouterLink>     
-      <RouterLink to="/women/running-shoes">Running</RouterLink>
-      <RouterLink to="/women/casual-shoes">Casual</RouterLink>
-      <RouterLink to="/women/hiking-shoes">Hiking</RouterLink>
-      <RouterLink to="/women/sandals">Sandals</RouterLink>
+      <RouterLink to="/women/shoes/running-shoes">Running</RouterLink>
+      <RouterLink to="/women/shoes/casual-shoes">Casual</RouterLink>
+      <RouterLink to="/women/shoes/hiking-shoes">Hiking</RouterLink>
+      <RouterLink to="/women/shoes/sandals">Sandals</RouterLink>
     </div>
 
     <div class="mega-col">
-      <RouterLink to="/women/sale">
+      <RouterLink to="/sale/women">
         <h4>WOMEN’S SALE</h4>
       </RouterLink>    
-      <RouterLink to="/women/sale-10">10% OFF</RouterLink>
-      <RouterLink to="/women/sale-25">25% OFF</RouterLink>
-      <RouterLink to="/women/sale-50">50% OFF</RouterLink>
+      <RouterLink to="/sale/women/sale-10">10% OFF</RouterLink>
+      <RouterLink to="/sale/women/sale-25">25% OFF</RouterLink>
+      <RouterLink to="/sale/women/sale-50">50% OFF</RouterLink>
     </div>
   </div>
 </template>

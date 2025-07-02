@@ -62,9 +62,7 @@
         <span class="icon">🔍</span>
         <input type="text" placeholder="Search…" />
       </div>
-      <RouterLink to="/cart" class="ff-cart">
-        🛒
-      </RouterLink>
+      <button class="ff-cart" @click="cart.toggle">🛒</button>
     </div>
   </nav>
 </template>
@@ -72,10 +70,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
+import { computed } from 'vue';
 import logo from '/src/assets/logo.png'; 
 import MenMegaMenu from './MenMegaMenu.vue';
 import WomenMegaMenu from './WomenMegaMenu.vue';
 import AccessoriesMegaMenu from './AccessoriesMegaMenu.vue';
+import { useCartStore } from '../stores/cart';
+const cart = useCartStore();
 
 // which mega-menu (if any) is open
 const active = ref<string | null>(null);
