@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed }          from 'vue'
-import { useProductStore }   from '../stores/products'
-import { useCartStore }      from '../stores/cart'
-import ProductCard           from '../components/ProductCard.vue'
+import { computed } from 'vue'
+import { useProductStore } from '../stores/products'
+import { useCartStore } from '../stores/cart'
+import ProductCard from '../components/ProductCard.vue'
+import Footer from '@/components/Footer.vue'
 
 const productsStore = useProductStore()
 const cart          = useCartStore()
@@ -29,6 +30,7 @@ const menProducts = computed(() => productsStore.byCategory('men'))
       />
     </div>
   </div>
+
 </template>
 
 

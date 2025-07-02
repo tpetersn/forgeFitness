@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HomePage from './views/HomePage.vue';
 import Navbar from './components/Navbar.vue';
 import CartSideBar from './components/CartSideBar.vue';
+import Footer from './components/Footer.vue';
 
 
 </script>
@@ -11,7 +12,8 @@ import CartSideBar from './components/CartSideBar.vue';
   <Navbar />
   <RouterView />
   <CartSideBar />
-
+  <Footer />
+  
 </template>
 
 <style scoped>
