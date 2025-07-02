@@ -25,7 +25,7 @@ const menProducts = computed(() => productsStore.byCategory('men'))
         v-for="p in menProducts"
         :key="p.id"
         :product="p"
-        @add-to-cart="({ id, size }) => cart.add(id, size)"
+        @add-to-cart="({ id, name, size, qty, price}) => cart.add(id, name, size, qty, price)"
       />
     </div>
   </div>

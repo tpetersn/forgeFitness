@@ -12,14 +12,13 @@ c<template>
           SHOP OUR<br />BRAND NEW<br />ATHLETIC CLOTHING<br />AND ACCESSORIES
         </h1>
         <div>
-          <router-link to="/men" class="btn btn-outline-dark me-3 mb-3 mb-sm-0">SHOP MEN'S</router-link>
+          <router-link to="/men" class="btn btn-outline-dark me-3 mb-sm-3">SHOP MEN'S</router-link>
           <router-link to="/women" class="btn btn-outline-dark">SHOP WOMEN'S</router-link>
         </div>
       </div>
     </section>
 
     <section class="banner position-relative text-center py-5">
-      <!-- slanted background -->
       <div class="bg-image" :style="`background-image: url('${bgImage}')`"></div>
 
       <!-- foreground content -->
@@ -92,8 +91,8 @@ import bgImage from '/src/assets/bg.png'
 }
 
 .btn {
-    border-radius: 2rem;
-    padding: .45rem 1.6rem;
+  border-radius: rem;
+  padding: .45rem 1.6rem;
 }
 
 .btn-outline-dark{
