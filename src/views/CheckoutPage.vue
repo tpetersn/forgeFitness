@@ -77,10 +77,12 @@
 <script setup lang="ts">
 import { reactive, computed } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
-import { useCartStore } from '../stores/cart'
+import { useCartStore } from '../stores/cart.js'
+import { useOrderStore } from '../stores/order.js'
 
 const cart   = useCartStore()
 const router = useRouter()
+const order = useOrderStore()
 
 /* ---- reactive form object ---- */
 const form = reactive({
@@ -102,7 +104,13 @@ const allFilled = computed(() =>
 function placeOrder() {
   cart.clear()
   router.push('/confirmation')
+  order.save({
+    email: form.email,
+    fullName: form.fullName,
+    address: `${form.address}, ${form.city}, ${form.province} ${form.postal}`
+  })
 }
+
 </script>
 
 <style scoped>

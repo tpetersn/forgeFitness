@@ -5,6 +5,7 @@ import WomenPage from '../views/WomenPage.vue'
 import AccessoriesPage from '../views/AccessoriesPage.vue'
 import SalesPage from '../views/SalesPage.vue'
 import CheckoutPage from '../views/CheckoutPage.vue'
+import ConfirmationPage from '../views/ConfirmationPage.vue' 
 
 
 
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/checkout',
       name: 'checkout',
       component: CheckoutPage,
+    },
+    {
+      path: '/confirmation',
+      name: 'confirmation',
+      component: ConfirmationPage,
     },
   ],
 })

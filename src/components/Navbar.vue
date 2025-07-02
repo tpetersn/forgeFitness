@@ -164,7 +164,7 @@ const active = ref<string | null>(null);
 .ff-search input {
     border: none;
     outline: none;
-    width: 5rem;
+    width: 6.5rem;
 }
 
 .ff-cart {
