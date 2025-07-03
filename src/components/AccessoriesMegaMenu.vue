@@ -2,38 +2,26 @@
   <div class="mega-menu">
     <div class="mega-col">
         <RouterLink to="/accessories/bags">
-        <h4>BAGS & BACKPACKS</h4>
+        <h4>GYM EQUIPMENT</h4>
       </RouterLink>  
-      <RouterLink to="/accessories/bags/duffel-bags">Duffel Bags</RouterLink>
-      <RouterLink to="/accessories/bags/gym-backpacks">Gym Backpacks</RouterLink>
-      <RouterLink to="/accessories/bags/fanny-packs">Fanny Packs</RouterLink>
     </div>
 
     <div class="mega-col">
         <RouterLink to="/accessories/hats">
-        <h4>HATS & HEADWEAR</h4>
+        <h4>YOGA EQUIPMENT</h4>
       </RouterLink>  
-      <RouterLink to="/accessories/hats/caps">Caps</RouterLink>
-      <RouterLink to="/accessories/hats/beanies">Beanies</RouterLink>
-      <RouterLink to="/accessories/hats/headbands">Headbands</RouterLink>
     </div>
 
     <div class="mega-col">
     <RouterLink to="/accessories/drinkware">
         <h4>DRINKWARE</h4>
       </RouterLink>  
-      <RouterLink to="/accessories/drinkware/water-bottles">Water Bottles</RouterLink>
-      <RouterLink to="/accessories/drinkware/shakers">Shakers</RouterLink>
-      <RouterLink to="/accessories/drinkware/ice-mugs">Ice Mugs</RouterLink>
     </div>
 
     <div class="mega-col">
     <RouterLink to="/sale/accessories">
         <h4>ACCESSORIES SALE</h4>
       </RouterLink>  
-      <RouterLink to="/sale/accessories/sale-10">10% OFF</RouterLink>
-      <RouterLink to="/sale/accessories/sale-25">25% OFF</RouterLink>
-      <RouterLink to="/sale/accessories/sale-50">50% OFF</RouterLink>
     </div>
   </div>
 </template>

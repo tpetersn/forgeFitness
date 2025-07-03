@@ -8,7 +8,6 @@
       <RouterLink to="/men/tops/t-shirts">T-Shirts</RouterLink>
       <RouterLink to="/men/tops/long-sleeve">Long Sleeve</RouterLink>
       <RouterLink to="/men/tops/muscle-shirt">Muscle Shirt</RouterLink>
-      <RouterLink to="/men/tops/compression-fit">Compression Fit</RouterLink>
       <RouterLink to="/men/tops/sweaters">Sweaters</RouterLink>
     </div>
 
@@ -29,16 +28,14 @@
       <RouterLink to="/men/shoes/running-shoes">Running</RouterLink>
       <RouterLink to="/men/shoes/casual-shoes">Casual</RouterLink>
       <RouterLink to="/men/shoes/hiking-shoes">Hiking</RouterLink>
-      <RouterLink to="/men/shoes/sandals">Sandals</RouterLink>
+      <RouterLink to="/men/shoes/slip-on">Slip-On</RouterLink>
     </div>
 
     <div class="mega-col">
       <RouterLink to="/sale/men">
         <h4>MEN’S SALE</h4>
       </RouterLink>
-      <RouterLink to="/sale/men/sale-10">10% OFF</RouterLink>
-      <RouterLink to="/sale/men/sale-25">25% OFF</RouterLink>
-      <RouterLink to="/sale/men/sale-50">50% OFF</RouterLink>
+
     </div>
   </div>
 </template>

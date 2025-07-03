@@ -7,7 +7,6 @@
       <RouterLink to="/women/tops/t-shirts">T-Shirts</RouterLink>
       <RouterLink to="/women/tops/long-sleeve">Long Sleeve</RouterLink>
       <RouterLink to="/women/tops/tanks">Tanks</RouterLink>
-      <RouterLink to="/women/tops/compression-fit">Compression Fit</RouterLink>
       <RouterLink to="/women/tops/sweaters">Sweaters</RouterLink>
     </div>
 
@@ -19,7 +18,6 @@
       <RouterLink to="/women/bottoms/shorts">Shorts</RouterLink>
       <RouterLink to="/women/bottoms/pants">Pants</RouterLink>
       <RouterLink to="/women/bottoms/skirts">Skirts</RouterLink>
-      <RouterLink to="/women/bottoms/joggers">Joggers</RouterLink>
     </div>
 
     <div class="mega-col">
@@ -29,16 +27,13 @@
       <RouterLink to="/women/shoes/running-shoes">Running</RouterLink>
       <RouterLink to="/women/shoes/casual-shoes">Casual</RouterLink>
       <RouterLink to="/women/shoes/hiking-shoes">Hiking</RouterLink>
-      <RouterLink to="/women/shoes/sandals">Sandals</RouterLink>
+      <RouterLink to="/women/shoes/slip-on">Slip-On</RouterLink>
     </div>
 
     <div class="mega-col">
       <RouterLink to="/sale/women">
         <h4>WOMEN’S SALE</h4>
       </RouterLink>    
-      <RouterLink to="/sale/women/sale-10">10% OFF</RouterLink>
-      <RouterLink to="/sale/women/sale-25">25% OFF</RouterLink>
-      <RouterLink to="/sale/women/sale-50">50% OFF</RouterLink>
     </div>
   </div>
 </template>

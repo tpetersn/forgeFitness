@@ -107,7 +107,8 @@ function confirmAdd () {
 .product-card {
   position: relative;
   width: 200px;
-  background-color: #e9efff;
+  height: 320px;
+  background-color: #d1d1d15d;
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
@@ -124,6 +125,7 @@ function confirmAdd () {
 
 .product-info {
   padding: 0.5rem;
+  border-top: 1px solid #ccc;
 }
 
 .sizes span {
