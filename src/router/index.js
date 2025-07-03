@@ -1,10 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
-
 import SalesPage from '../views/SalesPage.vue'
 import CheckoutPage from '../views/CheckoutPage.vue'
 import ConfirmationPage from '../views/ConfirmationPage.vue' 
-
 import CatalogPage from '../views/CatalogPage.vue'
 
 
@@ -37,6 +35,9 @@ const router = createRouter({
       component: ConfirmationPage,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
 })
 
 export default router

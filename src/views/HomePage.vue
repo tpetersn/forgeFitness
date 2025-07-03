@@ -40,7 +40,7 @@ c<template>
             With lots of at-home equipment, <br />
             great to get your summer sweat on!
           </p>
-          <router-link to="/equipment" class="btn btn-outline-dark">GYM EQUIPMENT</router-link>
+          <router-link to="/accessories/gym" class="btn btn-outline-dark">GYM EQUIPMENT</router-link>
         </div>
         <div class="feature-img">
           <img :src="image1" alt="Kettlebell" />
@@ -58,7 +58,7 @@ c<template>
           <p class="small mb-3">
             So you stay hydrated on those hot days!
           </p>
-          <router-link to="/hydration" class="btn btn-outline-dark">WATER BOTTLES</router-link>
+          <router-link to="/accessories/drinkware" class="btn btn-outline-dark">WATER BOTTLES</router-link>
         </div>
       </div>
 
