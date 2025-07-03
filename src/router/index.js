@@ -1,12 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
-import MenPage from '../views/MenPage.vue'
-import WomenPage from '../views/WomenPage.vue'
-import AccessoriesPage from '../views/AccessoriesPage.vue'
+
 import SalesPage from '../views/SalesPage.vue'
 import CheckoutPage from '../views/CheckoutPage.vue'
 import ConfirmationPage from '../views/ConfirmationPage.vue' 
 
+import CatalogPage from '../views/CatalogPage.vue'
 
 
 const router = createRouter({
@@ -18,19 +17,9 @@ const router = createRouter({
       component: HomePage,
     },
     {
-      path: '/men',
-      name: 'men',
-      component: MenPage,
-    },
-    {
-      path: '/women',
-      name: 'women',
-      component: WomenPage,
-    },
-    {
-      path: '/accessories',
-      name: 'accessories',
-      component: AccessoriesPage,
+      path: '/:topSection(men|women|accessories|sale)/:subSection?/:subSubSection?',
+      name: 'catalog',
+      component: CatalogPage,
     },
     {
       path: '/sale',

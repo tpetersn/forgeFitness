@@ -1,13 +1,13 @@
 <template>
   <div class="mega-menu">
     <div class="mega-col">
-        <RouterLink to="/accessories/bags">
+        <RouterLink to="/accessories/gym">
         <h4>GYM EQUIPMENT</h4>
       </RouterLink>  
     </div>
 
     <div class="mega-col">
-        <RouterLink to="/accessories/hats">
+        <RouterLink to="/accessories/yoga">
         <h4>YOGA EQUIPMENT</h4>
       </RouterLink>  
     </div>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="mega-col">
-    <RouterLink to="/sale/accessories">
+    <RouterLink to="/accessories/sale">
         <h4>ACCESSORIES SALE</h4>
       </RouterLink>  
     </div>

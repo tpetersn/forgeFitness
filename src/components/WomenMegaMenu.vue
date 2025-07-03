@@ -31,7 +31,7 @@
     </div>
 
     <div class="mega-col">
-      <RouterLink to="/sale/women">
+      <RouterLink to="/women/sale">
         <h4>WOMEN’S SALE</h4>
       </RouterLink>    
     </div>

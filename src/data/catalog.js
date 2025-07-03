@@ -8,7 +8,7 @@ const catalog = [
   sizes: ['XS', 'S', 'M', 'L', 'XL'],   
   price: 18.49,                          
   colors: ['White', 'Black', 'Blue', 'Brown'],
-  tags: ['top', 't-shirt','new'],
+  tags: ['tops', 't-shirts','new'],
   image: '/src/assets/mens/t-shirt-1.png'
 },
 {
@@ -18,7 +18,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL', 'XXL'],    
   price: 32.50,                       
   colors: ['Gray', 'Blue'],
-  tags: ['top', 't-shirt', 'popular'],
+  tags: ['tops', 't-shirts', 'popular'],
   image: '/src/assets/mens/t-shirt-2.png'
 },
 {
@@ -28,7 +28,7 @@ const catalog = [
   sizes: ['XS', 'S', 'M', 'L', 'XL'],   
   price: 27.99,                           
   colors: ['Red', 'Gray', 'White', 'Black'],
-  tags: ['top', 't-shirt', 'new'],
+  tags: ['tops', 't-shirts', 'new'],
   image: '/src/assets/mens/t-shirt-13.png'
 },
 {
@@ -38,7 +38,7 @@ const catalog = [
   sizes: ['S', 'M', 'L'],               
   price: 28.75,                          
   colors: ['Green', 'Gray'],
-  tags: ['top', 't-shirt', 'popular'],
+  tags: ['tops', 't-shirts', 'popular'],
   image: '/src/assets/mens/t-shirt-14.png'
 },
 {
@@ -48,7 +48,7 @@ const catalog = [
   sizes: ['M', 'L', 'XL', 'XXL', 'XXXL'], 
   price: 30.25,                         
   colors: ['Gray', 'Blue', 'Red', 'Black', 'White'],
-  tags: ['top', 't-shirt'],
+  tags: ['tops', 't-shirts'],
   image: '/src/assets/mens/t-shirt-5.png'
 },
 
@@ -60,7 +60,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL', 'XXL'],   
   price: 37.49,                           
   colors: ['Gray', 'Black'],
-  tags: ['top', 'long-sleeve'],
+  tags: ['tops', 'long-sleeve'],
   image: '/src/assets/mens/long-sleeve-1.png'
 },
 {
@@ -70,7 +70,7 @@ const catalog = [
   sizes: ['M', 'L', 'XL', 'XXL'],       
   price: 35.99,                          
   colors: ['Green', 'Red'],
-  tags: ['top', 'long-sleeve', 'sale'],
+  tags: ['tops', 'long-sleeve', 'sale'],
   image: '/src/assets/mens/long-sleeve-2.png'
 },
 {
@@ -80,7 +80,7 @@ const catalog = [
   sizes: ['XS', 'S', 'M', 'L'],           
   price: 28.99,                       
   colors: ['Blue', 'Black'],
-  tags: ['top', 'long-sleeve', 'new'],
+  tags: ['tops', 'long-sleeve', 'new'],
   image: '/src/assets/mens/longsleeve/long-sleeve-3.png'
 },
 {
@@ -90,7 +90,7 @@ const catalog = [
   sizes: ['M', 'L', 'XL', 'XXL'],
   price: 48.25,                         
   colors: ['Red', 'Blue', 'Brown'],
-  tags: ['top', 'long-sleeve', 'popular'],
+  tags: ['tops', 'long-sleeve', 'popular'],
   image: '/src/assets/mens/longsleeve/long-sleeve-4.png'
 },
 {
@@ -100,7 +100,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL'],
   price: 33.00,                           
   colors: ['White', 'Gray', 'Black'],
-  tags: ['top', 'long-sleeve'],
+  tags: ['tops', 'long-sleeve'],
   image: '/src/assets/mens/longsleeve/long-sleeve-5.png'
 },
 
@@ -112,7 +112,7 @@ const catalog = [
   sizes: ['XS', 'S', 'M', 'L'],          
   price: 17.50,
   colors: ['Black', 'Gray'],
-  tags: ['top', 'muscle-shirt', 'featured'],
+  tags: ['tops', 'muscle-shirt', 'featured'],
   image: '/src/assets/mens/muscle/muscle-shirt-1.png'
 },
 {
@@ -122,7 +122,7 @@ const catalog = [
   sizes: ['M', 'L'],                    
   price: 23.49,                           
   colors: ['White', 'Blue'],
-  tags: ['top', 'muscle-shirt'],
+  tags: ['tops', 'muscle-shirt'],
   image: '/src/assets/mens/muscle/muscle-shirt-2.png'
 },
 {
@@ -132,7 +132,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL'],
   price: 25.25,                       
   colors: ['Red', 'Black'],
-  tags: ['top', 'muscle-shirt'],
+  tags: ['tops', 'muscle-shirt'],
   image: '/src/assets/mens/muscle/muscle-shirt-3.png'
 },
 {
@@ -142,7 +142,7 @@ const catalog = [
   sizes: ['M', 'L', 'XL', 'XXL'],     
   price: 27.95,   
   colors: ['Gray', 'White'],
-  tags: ['top', 'muscle-shirt', 'new'],
+  tags: ['tops', 'muscle-shirt', 'new'],
   image: '/src/assets/mens/muscle/muscle-shirt-4.png'
 },
 {
@@ -152,7 +152,7 @@ const catalog = [
   sizes: ['XS', 'S', 'M', 'L'],
   price: 20.50,                         
   colors: ['Black', 'Green'],
-  tags: ['top', 'muscle-shirt', 'sale'],
+  tags: ['tops', 'muscle-shirt', 'sale'],
   image: '/src/assets/mens/muscle/muscle-shirt-5.png'
 },
 
@@ -164,7 +164,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL', 'XXL'],
   price: 52.99,                           
   colors: ['Black', 'Gray'],
-  tags: ['top', 'sweater', 'popular'],
+  tags: ['tops', 'sweater', 'popular'],
   image: '/src/assets/mens/sweaters/sweater-1.png'
 },
 {
@@ -174,7 +174,7 @@ const catalog = [
   sizes: ['M', 'L', 'XL'],
   price: 49.50,                         
   colors: ['Blue', 'Gray', 'Red', 'Black', 'White'],
-  tags: ['top', 'sweater'],
+  tags: ['tops', 'sweater'],
   image: '/src/assets/mens/sweaters/sweater-2.png'
 },
 {
@@ -184,7 +184,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL'],
   price: 47.99,                         
   colors: ['Blue', 'Red', 'Gray', 'Black', 'White'],
-  tags: ['top', 'sweater'],
+  tags: ['tops', 'sweater'],
   image: '/src/assets/mens/sweaters/sweater-3.png'
 },
 {
@@ -194,7 +194,7 @@ const catalog = [
   sizes: ['M', 'L', 'XL', 'XXL'],
   price: 58.75,                           
   colors: ['Blue', 'Gray', 'Red', 'Black', 'White'],
-  tags: ['top', 'sweater'],
+  tags: ['tops', 'sweater'],
   image: '/src/assets/mens/sweaters/sweater-4.png'
 },
 {
@@ -204,7 +204,7 @@ const catalog = [
   sizes: ['S', 'M', 'L', 'XL'],
   price: 51.49,                          
   colors: ['Blue', 'Gray', 'Red', 'Black', 'White'],
-  tags: ['top', 'sweater', 'new'],
+  tags: ['tops', 'sweater', 'new'],
   image: '/src/assets/mens/sweaters/sweater-5.png'
 },
 
@@ -630,13 +630,13 @@ const catalog = [
   // T-Shirts ***
   {
     id: 'W101',
-    name: 'AthleticSports Bra',
+    name: 'Athletic Sports Bra',
     category: 'women',
     sizes: ['XS', 'S', 'M', 'L'],
     price: 24.99,
     colors: ['White', 'Pink', 'Purple', 'Orange', 'Blue'],
-    tags: [],
-    image: '/src/assets/womens/sports-bra.png'
+    tags: ['tops', 't-shirts', 'new', 'sale'],
+    image: '/src/assets/womens/t-shirt-1.png'
   },
 
   //ACCESSORIES CATALOG **********************************************
@@ -648,7 +648,7 @@ const catalog = [
     sizes: ['Reg'],
     price: 12.99,
     colors: ['Black', 'Blue', 'Green', 'Red'],
-    tags: ['waterbottle', 'popular'],
+    tags: ['drinkware', 'popular'],
     image: '/src/assets/accessories/1G-bottle.png'
   },
   {
@@ -658,7 +658,7 @@ const catalog = [
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red'],
-    tags: ['waterbottle','new'],
+    tags: ['drinkware','new'],
     image: '/src/assets/accessories/1L-bottle.png'
   },
     {
@@ -668,7 +668,7 @@ const catalog = [
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red'],
-    tags: ['waterbottle','popular'],
+    tags: ['drinkware','popular'],
     image: '/src/assets/accessories/shaker-bottle.png'
   },
   {
@@ -678,7 +678,7 @@ const catalog = [
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
-    tags: ['waterbottle',],
+    tags: ['drinkware',],
     image: '/src/assets/accessories/casual-bottle.png'
   },
     {
@@ -688,7 +688,7 @@ const catalog = [
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Red'],
-    tags: ['waterbottle',],
+    tags: ['drinkware'],
     image: '/src/assets/accessories/fancy-bottle.png'
   },
 
@@ -696,51 +696,51 @@ const catalog = [
   {
     id: 'E101',
     name: 'Dumbbell Set',
-    category: 'equipment',
+    category: 'accessories',
     sizes: ['Reg'],
-    price: 12.99,
+    price: 34.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
-    tags: ['equipment', 'new'],
+    tags: ['gym', 'new'],
     image: '/src/assets/equipment/dumbbell-set.png'
   },
   {
     id: 'E102',
     name: 'Barbell Set',
-    category: 'equipment',
+    category: 'accessories',
     sizes: ['Reg'],
-    price: 12.99,
+    price: 49.99,
     colors: ['Black', 'Blue', 'Green', 'Red', 'Purple'],
-    tags: ['equipment','new'],
+    tags: ['gym','new'],
     image: '/src/assets/equipment/barbell-set.png'
   },
   {
     id: 'E103',
     name: 'Kettlebell Set',
-    category: 'equipment',
+    category: 'accessories',
     sizes: ['Reg'],
-    price: 12.99,
+    price: 37.99,
     colors: ['Black', 'Blue', 'Green', 'Red', 'Yellow'],
-    tags: ['equipment','new'],
+    tags: ['gym','new'],
     image: '/src/assets/equipment/kettlebell-set.png'
   },
   {
     id: 'E104',
     name: 'Cable Set',
-    category: 'equipment',
+    category: 'accessories',
     sizes: ['Reg'],
-    price: 12.99,
+    price: 19.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
-    tags: ['equipment','new'],
+    tags: ['gym','new'],
     image: '/src/assets/equipment/cable-set.png'
   },
     {
     id: 'E105',
     name: 'Pullup Bar',
-    category: 'equipment',
+    category: 'accessories',
     sizes: ['Reg'],
-    price: 12.99,
+    price: 24.99,
     colors: ['White', 'Black', 'Blue', 'Red'],
-    tags: ['equipment','new'],
+    tags: ['gym','new'],
     image: '/src/assets/equipment/pullup-bar.png'
   },
   
@@ -748,17 +748,17 @@ const catalog = [
   {
     id: 'Y101',
     name: 'Yoga Mat',
-    category: 'yoga',
+    category: 'accessories',
     sizes: ['Reg'],
     price: 12.99,
     colors: ['Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
-    tags: ['yoga', 'new'],
+    tags: ['yoga', 'new', 'sale'],
     image: '/src/assets/yoga/yoga-mat.png'
   },
   {
     id: 'Y102',
     name: 'Yoga Block',
-    category: 'yoga',
+    category: 'accessories',
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
@@ -768,7 +768,7 @@ const catalog = [
   {
     id: 'Y103',
     name: 'Yoga Socks',
-    category: 'yoga',
+    category: 'accessories',
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
@@ -778,7 +778,7 @@ const catalog = [
   {
     id: 'Y104',
     name: 'Yoga Towel',
-    category: 'yoga',
+    category: 'accessories',
     sizes: ['Reg'],
     price: 12.99,
     colors: ['White', 'Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],
@@ -788,7 +788,7 @@ const catalog = [
   {
     id: 'Y105',
     name: 'Yoga Ball',
-    category: 'yoga',
+    category: 'accessories',
     sizes: ['Reg'],
     price: 12.99,
     colors: ['Black', 'Blue', 'Green', 'Red', 'Pink', 'Purple', 'Orange', 'Yellow'],

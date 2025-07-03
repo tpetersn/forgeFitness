@@ -8,7 +8,7 @@
       <RouterLink to="/men/tops/t-shirts">T-Shirts</RouterLink>
       <RouterLink to="/men/tops/long-sleeve">Long Sleeve</RouterLink>
       <RouterLink to="/men/tops/muscle-shirt">Muscle Shirt</RouterLink>
-      <RouterLink to="/men/tops/sweaters">Sweaters</RouterLink>
+      <RouterLink to="/men/tops/sweater">Sweaters</RouterLink>
     </div>
 
     <div class="mega-col">
