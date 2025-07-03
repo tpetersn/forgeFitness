@@ -114,5 +114,8 @@ function placeOrder() {
 </script>
 
 <style scoped>
-.ff-logo{ text-decoration:none; letter-spacing:2px }
+.ff-logo{
+  text-decoration:none;
+  letter-spacing:2px
+}
 </style>

@@ -42,14 +42,17 @@ const menProducts = computed(() => productsStore.byCategory('men'))
 }
 
 .section-header {
-  background: #333;
+  background-image: url('../assets/bg.png');
   color: white;
   padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 .section-header h2 {
   font-size: 2rem;
   margin: 0;
+  font-weight: bolder;
 }
 
 .featured {

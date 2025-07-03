@@ -13,7 +13,7 @@ import Footer from './components/Footer.vue';
   <RouterView />
   <CartSideBar />
   <Footer />
-  
+
 </template>
 
 <style scoped>

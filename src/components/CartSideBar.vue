@@ -4,7 +4,7 @@
       <aside v-if="isOpen" class="cart-panel" @click.self="cart.toggle">
         <div class="cart-box">
           <header>
-            <h3>Your Cart</h3>
+            <h3>YOUR CART</h3>
             <button class="close" @click="cart.toggle">×</button>
           </header>
 
@@ -33,7 +33,7 @@
               <span>Your Total</span>
               <span>${{ cart.total.toFixed(2) }}</span>
             </div>
-            <RouterLink to="/checkout" class="checkout" @click="cart.toggle">Checkout</RouterLink>
+            <RouterLink to="/checkout" class="checkout" @click="cart.toggle">CHECKOUT</RouterLink>
           </template>
         </div>
       </aside>
@@ -86,12 +86,15 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid #ccc;
 }
 h3   {
-  margin: 0;
+  margin: 2rem 0;
   font-size: 1.8rem;
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: bolder;
+  
 }
 .close {
   background:none;
@@ -139,11 +142,13 @@ h3   {
   overflow:auto;
   padding:0.5rem 1rem;
   list-style:none;
+  margin-top:1rem;
+
 }
 .item-list li {
   display:flex;
   justify-content:space-between;
-  margin-bottom:0.5rem;
+  margin-bottom:1.2rem;
 }
 
 .total {
@@ -161,12 +166,16 @@ h3   {
   padding:0.6rem 0;
   background:#000;
   color:#fff;
-  text-decoration:none;
-  border-radius:4px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:8px;
 }
 .remove {
-  background-color: grey;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  padding: 0.1rem 0.5rem;
   border-radius: 5px;
+  margin-left:0.5rem;
 }
 .item-list li {
   display: flex;
@@ -177,7 +186,7 @@ h3   {
 
 .price {
   font-weight: bold;
-  margin-right: -8rem;
+  margin-left: auto;
 }
 
 </style>

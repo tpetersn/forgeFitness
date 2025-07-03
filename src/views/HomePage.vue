@@ -23,7 +23,7 @@ c<template>
 
       <!-- foreground content -->
       <div class="banner-box position-relative bg-white bg-opacity-90 rounded-3 mx-auto p-4 p-lg-5 shadow">
-        <h2 class="fw-bold fst-italic mb-2">It’s summer time. Time to get active.</h2>
+        <h2 class="fw-bold fst-italic mb-2">It’s summer time. Time to get active!</h2>
         <p class="lead mb-4">Shop our sale section now!</p>
         <router-link to="/sale" class="btn btn-secondary btn-lg">Summer Sales</router-link>
       </div>
@@ -81,6 +81,7 @@ import image2 from '/src/assets/hydrated.png'
 
 .workout {
     min-height: 520px;
+    margin-top: 0.5rem;
 }
 .workout-img img {
     width: 100%;
@@ -157,7 +158,7 @@ import image2 from '/src/assets/hydrated.png'
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background: #7b7f86; 
+    background: #ee220bb9; 
 }
 
 

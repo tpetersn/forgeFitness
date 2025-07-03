@@ -107,11 +107,12 @@ function confirmAdd () {
 .product-card {
   position: relative;
   width: 200px;
-  background-color: #e3e3e3;
+  background-color: #e9efff;
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
   font-size: 0.9rem;
+  border-radius: 5px;
 }
 
 .product-img {
@@ -153,10 +154,11 @@ function confirmAdd () {
   top:140px;
   left:0;
   width:100%;
-  background:#f0f0f0;
+  background:#fffcfc;
   border:2px solid #000;
   padding:.5rem;
   z-index:2;
+  border-radius: 5px;
 }
 
 .picker-header {
@@ -182,14 +184,14 @@ function confirmAdd () {
 
 .chip {
   border:2px solid #000;
-  background:#fff;
+  background:#ffffff;
   padding:2px 8px;
   cursor:pointer;
   font-weight:600;
   font-size:.8rem;
 }
 .chip.active {
-  background:#74a9d8;
+  background:#0088ff;
   color:#fff;
 }
 
@@ -210,11 +212,12 @@ function confirmAdd () {
   width:100%;
   padding:4px 0;
   margin-bottom:.4rem;
-  background:#000;
+  background:#00b95d;
   color:#fff;
   border:none;
   cursor:pointer;
   font-weight:700;
+  border-radius: 22px;
 }
 
 .confirm:disabled {
@@ -225,9 +228,11 @@ function confirmAdd () {
 .cancel {
   width:100%;
   padding:4px 0;
-  background:#b4b4b4;
+  background:#303030;
+  color:#fff;
   border:none;
   cursor:pointer;
+  border-radius: 22px;
 }
 
 </style>

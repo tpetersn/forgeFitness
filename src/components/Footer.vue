@@ -4,12 +4,16 @@
     <div class="footer-left">
       <h2 class="brand">FORGE FITNESS</h2>
 
-      <p>Email: <a href="mailto:contact@forgefitness.ca">contact@forgefitness.ca</a></p>
-      <p>Phone: 1-613-123-0011</p>
+      <p>contact@forgefitness.ca</p>
+      <p>1-613-123-0011</p>
+      <p>Follow us on Social Media</p>
 
       <!-- SVG placeholders – add your icons later -->
       <div class="social-icons">
         <!-- e.g. <FacebookIcon /> <InstagramIcon /> -->
+         <InstagramIcon />
+         <FacebookIcon />
+         <XIcon />
       </div>
     </div>
 
@@ -21,7 +25,10 @@
 </template>
 
 <script setup>
-import logo from '/src/assets/logo.png';     
+import logo from '/src/assets/logo.png';  
+import InstagramIcon from '/src/assets/icons/instagram.vue';  
+import FacebookIcon from '/src/assets/icons/facebook.vue'; 
+import XIcon from '/src/assets/icons/twitter.vue';
 </script>
 
 <style scoped>
@@ -46,10 +53,10 @@ import logo from '/src/assets/logo.png';
 .ff-footer::before {
   content: "";
   position: absolute;
-  inset: 0;                           /* full cover */
+  inset: 0;                           
   background: url('/src/assets/bg.png') center / cover no-repeat;
-  opacity: 0.35;                      /* <-- control opacity here */
-  z-index: -1;                        /* place behind content */
+  opacity: 0.35;                      
+  z-index: -1;                        
 }
 
 /* ---------- Left column ---------- */
@@ -59,21 +66,21 @@ import logo from '/src/assets/logo.png';
   gap: 0.3rem;
   flex: 1 1 auto;
 }
+.footer-left p {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
 
 .brand {
-  /* same heavy style used on ordering page */
   font-family: "Impact", "Arial Black", sans-serif;
   font-size: 2rem;
-  font-weight: 900;                   /* extra bold */
+  font-weight: 900;                 
   letter-spacing: 0.04em;
-  margin: 0 0 0.4rem;
+  margin: 0 0 1.8rem;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
-.footer-left a {
-  color: inherit;
-  text-decoration: none;
-}
 
 .social-icons {
   display: flex;
@@ -84,7 +91,7 @@ import logo from '/src/assets/logo.png';
 
 /* ---------- Right column ---------- */
 .footer-right img {
-  width: 180px;                       /* tweak to taste */
+  width: 180px;                       
   height: auto;
 }
 
