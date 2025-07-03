@@ -50,7 +50,7 @@ import { RouterLink } from 'vue-router'
   gap: 4rem;
   padding: 2rem;
   background: white;
-  width: 100vw;
+  width: 75vw;
   border-top: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

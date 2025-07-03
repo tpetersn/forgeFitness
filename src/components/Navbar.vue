@@ -59,27 +59,79 @@
     <!-- search + cart -->
     <div class="ff-right">
       <div class="ff-search">
-        <span class="icon">🔍</span>
-        <input type="text" placeholder="Search…" />
+        <span class="icon">
+          <Search />
+        </span>
+        <input type="text" placeholder="Search…" v-model="query" />
+        <button
+          v-if="query"
+          class="clear-btn"
+          @click="query = ''"
+          aria-label="Clear search"
+        >×</button>
+        <SearchResults :results="filteredProducts" @add-to-cart="addToCart" />
       </div>
-      <button class="ff-cart" @click="cart.toggle">🛒</button>
+      <button class="ff-cart" @click="cart.toggle">
+        <Cart />
+      </button>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed} from 'vue';
 import { RouterLink } from 'vue-router';
-import { computed } from 'vue';
-import logo from '/src/assets/logo.png'; 
+import logo from '../assets/logo.png'; 
+import Search from '../assets/icons/search.vue';
+import Cart from '../assets/icons/cart.vue';
 import MenMegaMenu from './MenMegaMenu.vue';
 import WomenMegaMenu from './WomenMegaMenu.vue';
 import AccessoriesMegaMenu from './AccessoriesMegaMenu.vue';
 import { useCartStore } from '../stores/cart';
+import { useProductStore } from '../stores/products';
+import SearchResults from './SearchResults.vue';
+
 const cart = useCartStore();
 
 // which mega-menu (if any) is open
 const active = ref<string | null>(null);
+
+const query = ref('')
+
+const productStore = useProductStore()
+
+
+const filteredProducts = computed(() => {
+  if (!query.value.trim()) return []
+  const q = query.value.toLowerCase()
+
+  return productStore.all.filter(p => {
+    /* checking name */
+    if (p.name.toLowerCase().includes(q)) return true
+
+    /* checking category  */
+    if ((p.category ?? '').toLowerCase().includes(q)) return true
+
+    /* checking tags */
+    if (p.tags?.some(tag => tag.toLowerCase().includes(q))) return true
+
+    /* checking colours */
+    if (p.colors?.some(col => col.toLowerCase().includes(q))) return true
+
+    /* checking sizes */
+    if (p.sizes?.some(sz => sz.toLowerCase().includes(q))) return true
+
+    return false
+  })
+  .slice(0, 20)            // keep a hard cap if you like
+})
+
+function addToCart(product: any) {
+  cart.add(product.id, product.name, product.sizes[0], product.price, 1)
+  query.value = ''
+}
+
+
 </script>
 
 <style scoped>
@@ -134,9 +186,9 @@ const active = ref<string | null>(null);
 
 .ff-mega {
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 50%;
-    width: 90%;            
+    width: 75%;            
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -155,6 +207,7 @@ const active = ref<string | null>(null);
 
 .ff-search {
     display: flex;
+    position: relative;
     align-items: center;
     border: 1px solid #b4b4b4;
     padding: 0.35rem 0.6rem;
@@ -166,11 +219,31 @@ const active = ref<string | null>(null);
     outline: none;
     width: 6.5rem;
 }
+.clear-btn {
+  position: absolute;
+  right: 6px;                
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+}
 
 .ff-cart {
     font-size: 1.3rem;
     text-decoration: none;
     color: #000;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+.ff-cart:hover {
+    background: #ececec86;
+    border: 1px solid #2b28ff67;
 }
 
 /* ensure dropdown never overlaps navbar border */
@@ -181,7 +254,7 @@ const active = ref<string | null>(null);
     left: 0;
     height: 1px;
     width: 100%;
-    background: #c9c9c9;
+    background: #000000;
     pointer-events: none;
 }
 </style>
